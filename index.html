@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>无人发现的角落</title>
+  <meta name="description" content="一个记录学习与生活的个人博客，分享生活随笔。。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b1e36'/%3E%3Cpath d='M30 22h40a6 6 0 0 1 6 6v50l-26-14-26 14V28a6 6 0 0 1 6-6z' fill='%2360a5fa'/%3E%3Cpath d='M40 40h20M40 52h20' stroke='%230b1e36' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Highlight.js (本地) -->
+  <link rel="stylesheet" href="css/vendor/github-dark.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/article.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand-group" onclick="window.location.hash='#/'">
+        <div class="nav-logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="nav-brand-text">
+          <a href="#/" class="nav-brand">无人发现的角落</a>
+          <span class="nav-tagline">记录学习 · 生活</span>
+        </div>
+      </div>
+
+      <nav class="nav-center" id="navMenu">
+        <a href="#/" class="nav-link" data-page="home">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>首页
+        </a>
+        <a href="#/about" class="nav-link" data-page="about">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>关于
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-search">
+          <input type="text" class="nav-search-input" id="searchInput" placeholder="搜索文章..." oninput="handleSearch(this.value)">
+          <svg class="nav-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <div class="nav-mobile-toggle" id="mobileToggle" onclick="toggleMobileMenu()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="app" class="main-content"></main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span style="font-size:16px;">&#10024;</span>
+        <span class="footer-brand-name">无人发现的角落</span>
+        <span class="footer-sep">|</span>
+        <span style="color:#94a3b8;">记录学习与生活的点滴</span>
+      </div>
+      <p class="footer-desc">本站文章均为原创，分享学习笔记与生活随笔，欢迎交流。</p>
+      <p class="footer-copy">&copy; 2026 neverfind. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Local Libraries -->
+  <script src="js/vendor/marked.min.js"></script>
+  <script src="js/vendor/highlight.min.js"></script>
+
+  <!-- App Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# 本地 Claude Code 配置/计划（非网站内容）
+.claude/
+
+# 若日后安装 npm 依赖
+node_modules/
+
+# 编辑器 / 系统杂项
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
