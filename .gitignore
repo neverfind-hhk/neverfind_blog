@@ -1,4 +1,4 @@
-# 本地 Claude Code 配置/计划（非网站内容）
+# 本地 Claude Code 配置/计划/skill（非网站内容，全部忽略，仅本地生效）
 .claude/
 
 # 若日后安装 npm 依赖
@@ -12,3 +12,6 @@ Thumbs.db
 
 # 日志文件
 *.log
+
+#md模板
+文章模板.md

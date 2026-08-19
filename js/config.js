@@ -53,6 +53,15 @@ var SITE_CONFIG = {
       tags: ['随笔', '写作'],
       excerpt: '写博客满一年，聊聊写作带给我的改变：为什么坚持、踩过哪些坑，以及写作对学习与思考的帮助。',
       published: true
+    },
+    {
+      slug: 'git-learning',
+      title: 'Git版本管理学习',
+      date: '2026-08-19',
+      category: '学习笔记',
+      tags: ['学习笔记','git'],
+      excerpt: 'Ai时代开发必备的版本管理',
+      published: true
     }
   ]
 };
