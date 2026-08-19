@@ -229,7 +229,10 @@ function renderArticle(slug) {
       app.innerHTML = html;
       document.title = post.title + ' - ' + SITE_CONFIG.title;
       window.scrollTo(0, 0);
-      if (window.hljs) hljs.highlightAll();
+      // 高亮失败绝不能影响文章显示（若抛错会落入 .catch 把整页换成错误页）
+      try {
+        if (window.hljs) hljs.highlightAll();
+      } catch (e) { /* 忽略高亮错误，文章照常显示 */ }
     })
     .catch(function () {
       renderLoadError();

@@ -210,6 +210,9 @@
   border-radius: var(--border-radius);
   overflow: auto;
   background: #0d1117;
+  /* 基础浅色文字：即使 highlight.js 未运行，代码也保持可读（浅字深底）。
+     注意 .article-content pre code 用了 color: inherit，会继承这里的颜色 */
+  color: #e6edf3;
 }
 
 .article-content pre code {
