@@ -32,7 +32,7 @@ git add --all
 ### 3.将暂存区文件提交进仓库
 
 ```bash
-git commit [<-m '备注'>]
+git commit <-m '备注'>
 
 /* -m意思是message，这个备注会作为这次提交的元数据关联在这个快照，同时还会管理作者和时间，作为一个可以肉眼直接识别的标识，不仅可以作为对内容及改动的注释，还可以相较于id快速分别其他快照。*/
 ```
@@ -40,7 +40,7 @@ git commit [<-m '备注'>]
 ### 4.对git进行配置
 
 - 有<--system> <--global> <--local> 三个作用域，system是系统级，配置在[安装目录](D:\Program Files\Git\etc\gitconfig)，global是用户级,配置在[用户目录](C:\Users\Administrator\.gitconfig),local是项目级，配置中[项目目录](D:\Project\项目目录\.git\config)
-优先级local高于globalg高于system。system一般不用，一般直接配置global
+优先级local高于global高于system。system一般不用，一般直接配置global
 
 - list 后可以接<--system> <--global> <--local>，会输出对应作用域的配置，如果不加，会直接顺序输出<--system> <--global> <--local>三个作用域的配置
 ```bash
